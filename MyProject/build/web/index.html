@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       Campus: <select >
+                <option value="first">FU-HL</option>
+                <option value="second">FU-HCM</option>
+                 <option value="second">FU-ÐN</option>
+            </select>
+            <br>
+            lecturer: <input type="text" name="name">
+            <input type="button" value="View">
+            <a href="Attdence.html">Attendence</a>
+            <a href="list.html">ListStudent</a>
+            <table border="1px">
+                <tr>
+                    <td>Year <select>
+                            <option value="value">2021</option> 
+                            <option value="value">2022</option>
+                            <option value="value">2023</option>
+                        </select> 
+                    </td> 
+                    <td>Mon</td>
+                    <td>TUE</td>
+                    <td>WED</td> 
+                    <td>THU</td>
+                    <td>FRI</td>
+                    <td>SAT</td>
+                    <td>SUN</td>
+                </tr>
+                 <tr>
+                
+                    <td>Week <select>
+                            <option value="value">17-1to23-1</option> 
+                            <option value="value">2022</option>
+                            <option value="value">2023</option>
+                        </select> 
+                    </td> 
+                    <td></td>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <c:forEach items="${requestScope.groups}" var="g">
+                <tr>
+                    <td>Slot1</td> 
+                    <td> GroupName <br>SesionName<br> at RoomName</td>
+                    <td>
+                       PRF192 <br> 
+                        at BE-301
+                    </td>
+                    <td></td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               </c:forEach>
+                 <tr>
+                    <td>Slot2</td> 
+                    <td>IOT1702-PRF192 <br> 
+                        at BE-301 </td>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>Slot3</td> 
+                    <td></td>
+                    <td></td>
+                    <td>OT1702-PRF192 <br> 
+                        at BE-301</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>Slot4</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td> 
+                    <td>OT1702-PRF192 <br> 
+                        at BE-301</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>Slot5</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td>OT1702-PRF192 <br> 
+                        at BE-301</td>
+                    <td></td>
+                    <td></td>
+                </tr> <tr>
+                    <td>Slot6</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td></td>
+                    <td>OT1702-PRF192 <br> 
+                        at BE-301</td>
+                    <td></td>
+                </tr>
+
+    
+                </table>
+          
+    </body>
+</html>
